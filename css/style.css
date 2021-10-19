@@ -67,9 +67,31 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../img/left-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
   width: 100%;
   max-width: 600px;
 }
+
+/* RETINA IMG JOYLASH */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  .hero{
+    background-image: url(../img/left-bg@2x.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+  }
+
+}
+
 .hero-content {
   max-width: 285px;
 
@@ -77,6 +99,7 @@ img{
 .hero-heading {
   margin-top: 0;
   margin-bottom: 24px;
+  font-family: "Bebas Neue", "Roboto Condenced", "Helvetica", sans-serif;
   text-transform: uppercase;
   font-size: 24px;
   line-height: normal;
@@ -86,6 +109,7 @@ img{
 
 .hero-link {
   display: inline-block;
+  font-family: "Bebas Neue", "Roboto Condenced", "Helvetica", sans-serif;;
   background-color: #1E90ff;
   color: #fff;
   text-decoration: none;
@@ -95,8 +119,9 @@ img{
 }
 
 .hero-link-inner{
-display: flex;
-padding: 12px 24px;
+  display: flex;
+  padding: 12px 24px;
+
 }
 
 .hero-link-inner::before{
@@ -104,6 +129,9 @@ padding: 12px 24px;
   height: 20px;
   margin-right: 12px;
   background-image: url(../img/star-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
   content: '';
 }
 
