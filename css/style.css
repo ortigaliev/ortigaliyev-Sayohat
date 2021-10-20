@@ -44,13 +44,7 @@ img{
 
 /* MAIN CONTENT */
 .main-content{
-  flex-grow: 1px;
-}
-
-/* MAIN CONTENT */
-.main-content{
   display: flex;
-  flex-grow: 1;
 }
 
 .global-wrapper{
