@@ -20,8 +20,8 @@ body{
   padding: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Bebas Neue", "Arial", sans-serif;
-  background-color: #fff;
+  font-family: "Bebas Neue", "Roboto Condenced", "Arial", sans-serif;
+  background-color: #333;
   color: #222;
 }
 
@@ -70,7 +70,7 @@ img{
   padding: 24px;
   background-image: url(../img/left-bg.jpg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: center bottom;
   width: 100%;
   max-width: 600px;
@@ -86,9 +86,9 @@ only screen and (                min-resolution: 192dpi),
 only screen and (                min-resolution: 2dppx) {
   .hero{
     background-image: url(../img/left-bg@2x.jpg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
   }
 
 }
@@ -143,4 +143,147 @@ only screen and (                min-resolution: 2dppx) {
   background-size: contain;
   background-position: center center;
   content: '';
+}
+
+/* LATES VIDEOS */
+
+.lates-videos {
+  width: 100%;
+  max-width: 600px;
+  padding: 54px;
+  background-color: #fff;
+}
+
+.lates-videos-heading {
+  margin-top: 0;
+  font-size: 24px;
+  line-height: normal;
+  font-family: "Bebas Neue", sans-serif;
+  color: #222;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.lates-videos-devider {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  border: 0;
+  height: 1px;
+  color: #222;
+}
+
+.lates-videos-list {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 24px;
+  list-style: none;
+}
+
+.lates-videos-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+/* ITEM LATES VIDEO */
+.item-lates-video {
+  display: flex;
+  align-items: center;
+
+}
+
+.item-lates-videos-img {
+  width: 160px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.item-lates-videos-info {
+  padding: 16px;
+}
+
+.item-lates-videos-heading {
+  margin-top: 0;
+  margin-bottom: 4px;
+  font-family: "Bebas Neue",  sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 2px;
+  color: #222;
+
+}
+
+.item-lates-videos-link {
+  text-decoration: none;
+  color: #222;
+}
+
+.item-lates-videos-link:hover{
+  color: rgba(30, 144, 255, 1);
+}
+
+.item-lates-videos-link:active{
+  color: rgba(30, 144, 255, 0.6);
+}
+
+.item-lates-videos-meta {
+  display: flex;
+  align-items: center;
+}
+
+.item-lates-video-published-at{
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #666;
+  line-height: 14px;
+}
+
+.item-lates-video-published-at::before{
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url(../img/icon-clock.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: '';
+}
+
+.item-lates-video-views {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: #666;
+  line-height: 14px;
+}
+
+.item-lates-video-views::before{
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+  background-image: url(../img/eye-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  content: '';
+}
+
+/* BUTTON */
+.load-more-button{
+  display: block;
+  width: 100%;
+  padding: 12px;
+  border: 0;
+  border-radius: 4px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  background-color: #1e90ff;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
 }
